@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang='ru'>
+  <head>
+    <meta charset="utf-8">
+    <title>Тэги HTML (краткий справочник по элементам HTML)</title>
+	<link rel="stylesheet" href="html.css">
+  </head>
+  
+  <body>
+    
+	<table border="1" style="border-collapse: collapse">
+	  <colgroup>
+	    <col class="name" >
+	    <col class="means">
+	    <col class="attr">
+	  </colgroup>
+	  <thead>
+	    <tr class=''>
+		  <th>ТЭГ</th><th>Что означает</th><th>Атрибуты</th>
+		</tr>
+	  </thead>
+	  
+	    <tr class='' id=''>
+	      <td class=''>
+		    <a href=""><span class='std tg'>html</span></a>
+		  </td>
+		  <td>Веб-страница</td>
+		  <td class="atr">
+		    <span class="obs" title='URL файла манифеста для чтения страницы оффлайн.  
+			  Синтаксис: manifest="URL" '> manifest</span>,
+		    <span class=""> </span>,
+		    <span class=""> </span>
+		  </td>
+	    </tr>
+	  
+	    <tr class='nst obs lspr' id=''>
+	      <td class=''>
+		    <span class='tg'>element</span>
+		  </td>
+		  <td>описание элемента</td>
+		  <td class="atr">
+		    <span class="log">attr1 </span>,
+		    <span class="num">attr2 </span>,
+		    <span class="url">attr3 </span>,
+		    <span class="opt">attr4 </span>,
+		    <span class="txt">attr5 </span>,
+		    <span class="">attr6 </span>,
+		    <span class="oblg">attr7 </span>,
+		    <span class="">attr8 </span>
+		  </td>
+	    </tr>
+	  
+	    <tr class='std new nspr' id=''>
+	      <td class=''>
+		    <span class='tg'>figcaption</span>
+		  </td>
+		  <td></td>
+		  <td class="atr">
+		    <span class=""> </span>,
+		    <span class=""> </span>,
+		    <span class=""> </span>,
+		    <span class=""> </span>,
+		    <span class=""> </span>,
+		    <span class=""> </span>,
+		    <span class=""> </span>,
+		    <span class=""> </span>
+		  </td>
+	    </tr>
+	  
+	    <tr class='nst ' id=''>
+	      <td class=''>
+		    <span class='tg'>blockquote</span>
+		  </td>
+		  <td></td>
+		  <td class="atr">
+		    <span class=""> </span>,
+		    <span class=""> </span>,
+		    <span class=""> </span>,
+		    <span class=""> </span>,
+		    <span class=""> </span>,
+		    <span class=""> </span>,
+		    <span class=""> </span>,
+		    <span class=""> </span>
+		  </td>
+	    </tr>
+
+<!-- FORM  FORM  FORM  FORM  FORM  FORM  FORM  FORM  FORM  FORM  FORM  FORM  -->
+	    <tr class=' ' id=''>
+	      <td class='std'>
+		    <span class='tg'>form</span>
+		  </td>
+		  <td>Форма для интерактивного взаимодействия с сервером (ввода данных и их отправки)</td>
+		  <td class="atr">
+		    <span class="std url" title='URL-адрес, по которому будут переданны данные из формы 
+для последующей обработки. Например, адрес скрипта CGI, PHP 
+или электронной почты.'> action</span>,
+		    <span class="std opt" title='Метод HTTP для отправки формы на сервер. Варианты:
+get - (по умолчанию) передача данных прицепленными к адресу 
+      обработчика запроса по типу: 
+	  http:cite.ru/proc.php?par1=value1&par2=value2 ...
+post - данные передаются отдельным постом после установления
+      связи с сервером
+dialog - данные берутся из диалогового окна, которое после их 
+      отправки на сервер, закрывается.'> method</span>,
+		    <span class="std opt" title='Указывает в каком окне/вкладке/фрейме следует выводить результат.
+Возможные значения: _self (по умолчанию), _blank, _top, _parent
+или идентификатор фрейма.'> target</span>,
+		    <span class="std opt" title='Способ кодирования данных формы при отправке по методу 
+method=post. Возможные значения:
+application/x-www-form-urlencoded (по умолчанию);
+multipart/form-data -данные не кодируются, для отправки файлов;
+text/plain -простой текстовый поток.'> enctype</span>,
+		    <span class="std opt" title='Список кодировок, которые принимает обработчик формы.
+Например: utf-8, utf8, unicode, utf-16, cp1251, koi8 ...'> accept-charset</span>,
+		    <span class="std opt lspr" title='Разрешение на помощь браузера в автозаполнении форм. 
+Возможные значения: on (по умолчанию) и off.
+Можно также ограничить автозаполнение набором значений из 
+следующего списка: name (honorific-prefix, given-name,
+additional-name, family-name, honorific-suffix, nickname), email,
+username, new-password, current-password, one-nime-code, 
+organization-title, organization, street-address, address-line1-3,
+address-level1-4, country (code), country-name, postal-code, cc-name, 
+cc-given-name, cc-additional-name, cc-family-name, cc-number, 
+cc-exp-month, cc-exp-year, cc-csc, cc-type, transactio-currency, 
+transaction-amount, language, bday, bday-day, bday-month, 
+bday-year, sex, tel (tel-country-code, tel-national, tel-area-code,
+tel-local), tel-extension, impp, url, photo (URL).'> autocomplete</span>,
+		    <span class="std" title='Имя формы, по которому её могут находить скрипты.'> name</span>,
+		    <span class="std log" title='Отмена проверки корректности вводимых данных при 
+отправке на сервер.'> novalidate</span>,
+		    <span class="std opt" title='Указывает на отношения исходной и вызываемой страниц. 
+В случае формы имеют смысл прежде всего значения noreferrer, 
+noopener, opener. 
+Также возможны другие значения: external, help, license, next, 
+nofollow, prev, search.'> rel</span>,
+		    <span class="" title=''> </span>
+		  </td>
+	    </tr>
+	  
+<!-- INPUT INPUT INPUT INPUT INPUT INPUT INPUT INPUT INPUT INPUT INPUT INPUT -->	  
+	    <tr class=' ' id=''>
+	      <td class='std'>
+		    <span class='tg'>input</span>
+		  </td>
+		  <td>Интерактивный ввод <br> Элемент управления в форме</td>
+		  <td class="atr">
+		    <span class="std opt" title="Тип отображаемого элемента. Варианты:
+'text' - ввод текстовой строки (значение по умолчанию);
+'button' - кнопка с надписью =value;
+'checkbox' - флажок выбора/отмены;
+'color' - поле выбора цвета;
+'date' - выбор даты mm/dd/yyyy;
+'datetime' - (+ часовой пояс);
+'datetime-local' - выбор даты и времени;
+'email' - электронная почта;
+'file' - выбор одного или более локальных файлов;
+'hidden' - неотображаемый элемент, значение которого передается серверу;
+'image' - значок отправки формы (берется из src или alt);
+'month' - выбор месяца и года;
+'number' - ввод целого числа; полезно использовать с min, max и step;
+'password' - поле ввода пароля;
+'radio' - выбор варианта из группы с одним name но разными value;
+'range' - ползунок для выбора числа из диапазона;
+'reset' - кнопка сброса содержимого формы;
+'search' - поле поискового запроса;
+'submit' - кнопка отправки формы на сервер;
+'tel' - ввод номера телефона;
+'time' - ввод времени в формате hh:mm:ss.m AM/PM;
+'url' - поле ввода URL;
+'week' - выбор номера недели и года."> type</span>,
+		    <span class="std" title='Файлы каких видов могут быть приняты формой для передачи на сервер.
+Используется, если для input выбран тип type="file". В атрибуте перечисляются 
+MIME-типы audio/*, video/*, image/*, а также расширения файлов, начиная с точки.
+Примеры синтаксиса:  accept=".txt, .doc, .pdf"    accept="audio/*".'> accept</span>,
+		    <span class="std txt" title='Альтернативный текст для незагрузившегося изображения.
+Используется для типа type="image".'> alt</span>,
+		    <span class="std opt lspr" title='Указания для браузера о возможности автозаполнения форм,
+а также о предполагаемому содержимому для автозаполнения поля.
+Возможные значения: off, on, name (honorific-prefix, given-name,
+additional-name, family-name, honorific-suffix, nickname), email,
+username, new-password, current-password, one-nime-code, 
+organization-title, organization, street-address, address-line1-3,
+address-level1-4, country (code), country-name, postal-code, cc-name, 
+cc-given-name, cc-additional-name, cc-family-name, cc-number, 
+cc-exp-month, cc-exp-year, cc-csc, cc-type, transactio-currency, 
+transaction-amount, language, bday, bday-day, bday-month, 
+bday-year, sex, tel (tel-country-code, tel-national, tel-area-code,
+tel-local), tel-extension, impp, url, photo (URL).'> autocomplete</span>,
+		    <span class="std log" title='Указывает на выбор поля при загрузке страницы.
+Используется для type="checkbox" и type="radio".'> checked</span>,
+		    <span class="std idr" title='Имя переменной, содержащей значение напрвления ввода текста (ltr|rtl).
+Используется для type="text" и type="search".'> dirname</span>,
+		    <span class="std log" title='Недоступно для редактирования и копирования.'> disabled</span>,
+		    <span class="std idr" title='Присоединяет поле к форме с указанным id (не name!).
+Синтаксис: form="imya-formy".'> form</span>,
+		    <span class="std url" title='Переопределяет значение action, заданное в form.
+Используется только с кнопками type="submit" и type="image". Синтаксис:
+formaction="/search.php".'> formaction</span>,
+		    <span class="std opt" title='Переопределяет значение enctype, установленное в form.
+Используется только с кнопками type="submit" и type="image". Значения:
+application/x-www-form-urlencoded (по умолчанию);
+multipart/form-data -данные не кодируются, для отправки файлов;
+text/plain -простой текстовый поток.'> formenctype</span>,
+		    <span class="std opt" title='Переопределяет значение method, заданное в form.
+Используется только с кнопками type="submit" и type="image". 
+Возможные значения: get (по умолчанию), post, dialog.'> formmethod</span>,
+		    <span class="std log" title='Переопределяет значение novalidate, заданное в form.
+Указывает, что корректность заполнения формы не подлежит проверке.
+Используется только с кнопками type="submit" и type="image". '> formnovalidate</span>,
+		    <span class="std opt" title='Переопределяет значение target, заданное в form.
+Используется только с кнопками type="submit" и type="image". 
+Указывает в каком окне/вкладке/фрейме следует выводить результат.
+Возможные значения: _self (по умолчанию), _blank, _top, _parent
+или идентификатор фрейма.'> formtarget</span>,
+		    <span class="std num" title='Высота изображения кнопки отправки формы.
+Используется только для типа type="image".'> height</span>,
+		    <span class="std idr lspr" title='Ссылка на индентификатор списка datalist с вариантами выбора.
+Дает возможность пользователю воспользоваться значениями из списка. 
+Применяется с полями типа color, date, datetime, datetime-local, email, 
+month, number, range, search, tel, text, time, url, week .'> list</span>,
+		    <span class="std num" title='Устанавливает максимальное значение в диапазоне.
+Для полей типа number, range, date, time, month, week, datetime, 
+datetime-local.'> max</span>,
+		    <span class="std num" title='Максимально допустимое количество символов, которые 
+пользователь может ввести в поле.'> maxlength</span>,
+		    <span class="std num" title='Устанавливает минимальное значение в диапазоне.
+Для полей типа number, range, date, time, month, week, datetime, 
+datetime-local.'> min</span>,
+		    <span class="std num" title='Минимально допустимое количество символов, которые 
+пользователь должен ввести в поле.'> minlength</span>,
+		    <span class="std log" title='Разрешение указать несколько файлов или адресов email через 
+запятые в соответствующих полях ввода типов file/email .'> multiple</span>,
+		    <span class="std" title='Уникальное имя поля, используемое при работе со скриптами и 
+при отправке данных на сервер (name=value).'> name</span>,
+		    <span class="std" title='Регулярное выражение, которому должен соответствовать ввод для 
+прохождения проверки. Может применяться для полей text, password,
+search, email, url, tel. Наиболее типичные обозначения в патерне:
+\d - цифра;
+\D - любой знак кроме цифры
+\w - латинская буква, цифра, знак препинания
+\s - пробельный символов
+[12 ... hkl] - один из перечисленных символов
+[а-я] - любой символ из диапазона
+[А-ЯЁа-яё] - любая русская буква
+^ - инверсия/отрицание патерна
+* - повторить любое число раз
++ - повторить не менее одного раза
+? - поворить 0 или 1 раз
+{4} - повторить указанное число раз
+{2,} - повторить не менее указанного количества раз
+{3,5} - повторить не менее и не более раз
+\+ - включение служебного символа'> pattern</span>,
+		    <span class="std" title='Строка-подсказка, отображающаяся в элементе ввода 
+до начала его заполнения (поля типа text, password, search, 
+number, tel, email, url).'> placeholder</span>,
+		    <span class="std log" title='Текстовое поле не может быть изменено, но может быть 
+скопировано. Может использоваться для полей типа date, datetime, 
+datetime-local, email, month, number, password, search, tel, 
+text, time, url, week.'> readonly</span>,
+		    <span class="std log" title='Данное поле явлеятся обязательным для заполнения. 
+Без заполнение поля отправить форму на сервер не получится.'> required</span>,
+		    <span class="std num" title='Размер поля в условных символах. По умолчанию =20.
+Для типов email, password, search, tel, text, url.'> size</span>,
+		    <span class="std url" title='URL-адрес изображения кнопки отправки формы.
+Для поля типа image.'> src</span>,
+		    <span class="std num" title='Устанавливает величину шага при движении в диапазоне.
+Для полей типа number, range, date, time, month, week, datetime, 
+datetime-local.'> step</span>,
+		    <span class="std" title='Текущее значение поля, передаваемое на сервер (для полей
+типа text, password, search, email, url, hidden, color, date, time,
+datetime, datetime-local, month, week, number, range, tel).
+Для полей типа radio и checkbox значение value обязательно!
+Для кнопок button, submit и reset значение value содержит 
+текст на кнопке.'> value</span>,
+		    <span class="std num" title='Ширина изображения кнопки отправки формы.
+Используется только для типа type="image".'> width</span>
+		  </td>
+	    </tr>
+	  
+<!--  -->
+	    <tr class=' ' id=''>
+	      <td class='std'>
+		    <span class='tg'></span>
+		  </td>
+		  <td></td>
+		  <td class="atr">
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>
+		  </td>
+	    </tr>
+	  
+<!--  -->
+	    <tr class=' ' id=''>
+	      <td class='std'>
+		    <span class='tg'></span>
+		  </td>
+		  <td></td>
+		  <td class="atr">
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>
+		  </td>
+	    </tr>
+	  
+<!--  -->
+	    <tr class=' ' id=''>
+	      <td class='std'>
+		    <span class='tg'></span>
+		  </td>
+		  <td></td>
+		  <td class="atr">
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>
+		  </td>
+	    </tr>
+	  
+<!--  -->
+	    <tr class=' ' id=''>
+	      <td class='std'>
+		    <span class='tg'></span>
+		  </td>
+		  <td></td>
+		  <td class="atr">
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>
+		  </td>
+	    </tr>
+	  
+<!--  -->
+	    <tr class=' ' id=''>
+	      <td class='std'>
+		    <span class='tg'></span>
+		  </td>
+		  <td></td>
+		  <td class="atr">
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>
+		  </td>
+	    </tr>
+	  
+<!--  -->
+	    <tr class=' ' id=''>
+	      <td class='std'>
+		    <span class='tg'></span>
+		  </td>
+		  <td></td>
+		  <td class="atr">
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>
+		  </td>
+	    </tr>
+	  
+<!--  -->
+	    <tr class=' ' id=''>
+	      <td class='std'>
+		    <span class='tg'></span>
+		  </td>
+		  <td></td>
+		  <td class="atr">
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>
+		  </td>
+	    </tr>
+	  
+<!--  -->
+	    <tr class=' ' id=''>
+	      <td class='std'>
+		    <span class='tg'></span>
+		  </td>
+		  <td></td>
+		  <td class="atr">
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>,
+		    <span class="" title=''> </span>
+		  </td>
+	    </tr>
+	  
+	</table>
+	
+  </body>
+</html>

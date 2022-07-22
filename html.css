@@ -1,0 +1,24 @@
+a {color: inherit;}
+col.name {width: 15%; min-width: 105px; max-width: 150px;}
+col.means {width: 30%; min-width: 210px; max-width: 300px;}
+col.attr {width: 55%; min-width: 385px; max-width: 550px;}
+td.atr {background: white; color: black;font-weight:normal}
+
+.std {font-weight: 600; } 
+.nst {font-weight: normal; } 
+.new {color: maroon; } 
+.obs {color: slategray; } 
+.nspr {background: #ffe0e0; } 
+.lspr {background: #ffffa0; } 
+
+.tg::before {content: "<"}
+.tg::after {content: ">"}
+.tg {font-size: 115%}
+
+.log  {color: orangered;}
+.opt {color: blue;}
+.url {color: brown;}
+.num {color: #008000;}
+.txt {color: magenta;}
+.idr {color: black}
+.oblg {font-weight: 900;}
